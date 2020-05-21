@@ -66,4 +66,4 @@ const Character = props => {
 
 
 
-export default Character;
+export default React.memo(Character);
