@@ -15,7 +15,7 @@ const CharPicker = (props) => {
             if (!data.ok){
                 throw new Error ("Failed to fetch")
             }
-            return data;
+            return data.json();
         })
         .then(charData=> {
             const selectedCharacters = charData.results.slice(0,5);
