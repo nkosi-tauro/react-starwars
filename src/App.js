@@ -27,7 +27,7 @@ const App = props => {
       <CharPicker
         side={chosenSide}
         selectedChar={selectedCharacter}
-        onCharSelect={state.charSelectHandler}
+        onCharSelect={charSelectHandler}
       />
       <Character selectedChar={selectedCharacter}/>
       <button onClick={sidehandler.bind(this,"light")}>Light Side</button>
