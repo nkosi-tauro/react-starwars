@@ -12,7 +12,7 @@ const Character = props => {
 
     const fetchData = () => {
         setIsLoading(true)
-        fetch(`https://swapi.co/api/people${props.selectedChar}`)
+        fetch("https://swapi.dev/api/people")
         .then(data => {
             if (!data.ok){
                 throw new Error ("Failed to fetch Person")

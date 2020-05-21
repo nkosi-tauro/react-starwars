@@ -10,7 +10,7 @@ const CharPicker = (props) => {
 
     useEffect(()=> {
         setIsLoading(true);
-        fetch('https://swapi.co/api/people')
+        fetch('https://swapi.dev/api/people')
         .then(data => {
             if (!data.ok){
                 throw new Error ("Failed to fetch")
